@@ -1,0 +1,40 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 4em;
+  /* background: -webkit-linear-gradient(45deg, #43ffd9, #ffa811); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.header h3 {
+  /* background: -webkit-linear-gradient(45deg, #43ffaa, #ffa811); */
+
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.btn {
+  color: white;
+  display: inline-block;
+  background: #66aa00;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 4px 4px black;
+  transition: all 0.25s;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px black;
+  transform: translate(4px, 4px);
+  transition: all 0.25s;
+}
