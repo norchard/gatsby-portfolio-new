@@ -1,8 +1,8 @@
 ---
 title: "NBC Universal"
-description: "Branding and web design for a school system in Cambodia"
+description: "Portfolio app design for NBCU to showcase ad campaigns"
 stack: "Adobe Illustrator | Sketch | Adobe XD"
-image: "nbcu_small.png"
+image: "nbcu.jpg"
 slug: "nbc-universal"
 ---
 

@@ -41,7 +41,7 @@ Next let's create the scaffolding of our React app.
 ```
 
 Now our project should look like this:
-![image]()
+![React scaffold](../images/react-scaffold.png)
 
 Let's write our index.html file, which is the entry-point of the React app.
 

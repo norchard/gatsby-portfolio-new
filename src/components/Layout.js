@@ -13,13 +13,21 @@ export default function Layout({ children }) {
             <p>© 2023 Nicole Orchard</p>
           </div>
           <div className="socials">
-            <a className="btn pink" href="github.com">
+            {/* <a className="btn pink" href="github.com">
               Resume
-            </a>
-            <a className="btn" href="github.com">
+            </a> */}
+            <a
+              target="_blank"
+              className="btn"
+              href="https://github.com/norchard"
+            >
               Github
             </a>
-            <a className="btn blue" href="github.com">
+            <a
+              target="_blank"
+              className="btn blue"
+              href="https://www.linkedin.com/in/nicole-orchard/"
+            >
               LinkedIn
             </a>
           </div>
