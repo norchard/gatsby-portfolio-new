@@ -2,3 +2,16 @@
   font-size: 3em;
   margin-top: 80px;
 }
+
+.blog a {
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+.blog a:hover {
+  color: rgb(87, 159, 46);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid rgb(112, 190, 67);
+}

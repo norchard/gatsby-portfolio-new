@@ -18,7 +18,38 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `projects`,
+        // Path to the directory
+        path: `${__dirname}/src/projects/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `image`,
+        // Path to the directory
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 650,
+            },
+          },
+        ],
+      },
+    },
+    "gatsby-plugin-sharp",
   ],
   siteMetadata: {
     title: "Nicole Orchard",

@@ -10,7 +10,7 @@ A compiler is just a program that translates other programs. Traditional compile
 
 Traditional compiler design comprises three parts:
 
-![Compilers frontend](../src/images/blog/compiler1.jpeg)
+![Compilers frontend](../images/compiler1.jpeg)
 
 - **The Frontend** translates source
   code into an intermediate representation (IR)\*. [`clang`](http://clang.llvm.org/)
@@ -54,13 +54,13 @@ As I mentioned above, `clang` is LLVM's frontend for the C family of languages. 
 
   _Tokenization of compile_me.c_
 
-  ![Lexer](./images/compilers/lexer.jpeg)
+  ![Lexer](../images/lexer.jpeg)
 
 - **The Parser** determines whether or not the stream of words consists of valid sentences in the source language. After analyzing the grammar of the token stream, it outputs an abstract syntax tree (AST). Nodes in a Clang AST represent declarations, statements, and types.
 
   _The AST of compile_me.c_
 
-  ![Tree](./images/compilers/tree.jpeg)
+  ![Tree](../images/tree.jpeg)
 
 - **The Semantic Analyzer** traverses the AST, determining if code sentences have valid meaning. This phase checks for type errors. If the main function in compile_me.c returned `"zero"` instead of `0`, the semantic analyzer would throw an error because `"zero"` is not of type `int`.
 

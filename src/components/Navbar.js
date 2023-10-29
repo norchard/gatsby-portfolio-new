@@ -20,13 +20,21 @@ export default function Navbar() {
         <Link to="/">{title}</Link>
       </div>
       <div className="links">
-        <Link to="/about">
+        <Link to="/about" activeStyle={{ color: "#e23e15" }}>
           <span>👩‍💻</span>About
         </Link>
-        <Link to="/projects">
+        <Link
+          to="/projects"
+          activeStyle={{ color: "#e23e15" }}
+          partiallyActive={true}
+        >
           <span>🖼️</span>Projects
         </Link>
-        <Link to="/blog">
+        <Link
+          to="/blog"
+          activeStyle={{ color: "#e23e15" }}
+          partiallyActive={true}
+        >
           <span>📓</span>Writing
         </Link>
       </div>
