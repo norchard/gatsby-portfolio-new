@@ -15,9 +15,9 @@ export default function Blog({ data }) {
       <div className={styles.blog}>
         <h2>Blog Posts</h2>
         {posts.map((post) => (
-          <p key={post.id}>
+          <h3 key={post.id}>
             <Link to={"/blog/" + post.slug}>{post.title}</Link>
-          </p>
+          </h3>
         ))}
       </div>
     </Layout>

@@ -21,12 +21,13 @@ export default function About() {
           </p>
           <p>
             Eventually I decided to focus my attention on programming. After
-            studying & traveling for five months and attending the Recurse
-            Center in NYC, I landed my first software engineering job working on
-            APIs at Mapbox. There I gained experience programming
-            professionally, managing global resources on AWS, being on-call for
-            services and responding to incidents, as well as onboarding
-            teammates to new technology.
+            studying & traveling for five months and attending the{" "}
+            <a href="https://recursecenter.com">Recurse Center</a> in NYC, I
+            landed my first software engineering job working on APIs at{" "}
+            <a href="https://mapbox.com">Mapbox</a>. There I gained experience
+            programming professionally, managing global resources on AWS, being
+            on-call for services and responding to incidents, as well as
+            onboarding teammates to new technology.
           </p>
           <p>
             In the last several years I have done more web design work and these

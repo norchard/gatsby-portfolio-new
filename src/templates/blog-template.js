@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import * as styles from "../styles/blog-template.module.css";
 import { graphql } from "gatsby";
+import Seo from "../components/SEO";
 
 export default function BlogTemplate({ data }) {
   const { html } = data.markdownRemark;
@@ -18,6 +19,10 @@ export default function BlogTemplate({ data }) {
       </div>
     </Layout>
   );
+}
+
+export function Head({ data }) {
+  return <Seo title={data.markdownRemark.frontmatter.title} />;
 }
 
 export const query = graphql`

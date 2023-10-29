@@ -18,6 +18,7 @@ export default function Layout({ children }) {
             </a> */}
             <a
               target="_blank"
+              rel="noreferrer"
               className="btn"
               href="https://github.com/norchard"
             >
@@ -25,6 +26,7 @@ export default function Layout({ children }) {
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               className="btn blue"
               href="https://www.linkedin.com/in/nicole-orchard/"
             >

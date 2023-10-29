@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import * as styles from "../styles/project-template.module.css";
 import { graphql } from "gatsby";
+import Seo from "../components/SEO";
 
 export default function ProjectTemplate({ data }) {
   const { html } = data.markdownRemark;
@@ -18,6 +19,10 @@ export default function ProjectTemplate({ data }) {
       </div>
     </Layout>
   );
+}
+
+export function Head({ data }) {
+  return <Seo title={data.markdownRemark.frontmatter.title} />;
 }
 
 export const query = graphql`

@@ -25,6 +25,15 @@ p {
   line-height: 1.5em;
 }
 
+p > a {
+  font-weight: 600;
+  border-bottom: 2px solid;
+}
+
+p > a:hover {
+  color: #e23e15;
+}
+
 /* layout and nav */
 .layout {
   display: flex;
