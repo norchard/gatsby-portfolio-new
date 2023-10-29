@@ -18,4 +18,6 @@ Kulen Outreach needed a logomark that reflected the curiousity and enthusiasm of
 
 For an organization based in Cambodia, a website is an invaluable communication tool. Kulen Outreach's website was designed to facilitate easy access to information for potential donors and volunteers. High quality photography is featured on a large scale, giving users a sense of the real impact Kulen Outreach is making for the children of Phnom Kulen.
 
-![Kulen Outreach logo](../images/ko_web.png)
+![Kulen Outreach web](../images/ko_web.png)
+
+![Kulen Outreach web - schools](../images/ko_web_schools.png)

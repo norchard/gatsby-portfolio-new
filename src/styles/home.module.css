@@ -38,3 +38,10 @@
   transform: translate(4px, 4px);
   transition: all 0.25s;
 }
+
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

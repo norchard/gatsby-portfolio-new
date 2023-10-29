@@ -21,3 +21,10 @@
   padding-top: 40px;
   text-align: right;
 }
+
+@media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+  }
+}

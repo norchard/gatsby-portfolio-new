@@ -71,3 +71,9 @@
   line-height: 1em;
   color: rgb(146, 146, 146);
 }
+
+@media (max-width: 768px) {
+  .portfolio > div {
+    grid-template-columns: 1fr;
+  }
+}

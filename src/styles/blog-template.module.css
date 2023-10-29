@@ -40,3 +40,9 @@
 .blog ul {
   padding-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+  .blog {
+    max-width: 90vw;
+  }
+}
