@@ -15,6 +15,7 @@ export default function Projects({ data }) {
         <div>
           {projects.map((project) => {
             const info = project.frontmatter;
+            const idBase = info.title.toLowerCase().split(" ").join("-");
             return (
               <div key={project.id} className={styles.projectTile}>
                 <h1>{info.title}</h1>
@@ -23,6 +24,7 @@ export default function Projects({ data }) {
                 <p>
                   {info.demolink && (
                     <a
+                      id={idBase + "-demo-btn"}
                       href={info.demolink}
                       className={
                         "btn " +
@@ -33,12 +35,20 @@ export default function Projects({ data }) {
                     </a>
                   )}
                   {info.codelink && (
-                    <a href={info.codelink} className="btn">
+                    <a
+                      id={idBase + "-code-btn"}
+                      href={info.codelink}
+                      className="btn"
+                    >
                       View Code
                     </a>
                   )}
                   {info.slug && (
-                    <Link to={"/projects/" + info.slug} className="btn pink">
+                    <Link
+                      id={idBase + "-project-btn"}
+                      to={"/projects/" + info.slug}
+                      className="btn pink"
+                    >
                       View Project
                     </Link>
                   )}
