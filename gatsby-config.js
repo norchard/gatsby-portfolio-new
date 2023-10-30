@@ -50,6 +50,14 @@ module.exports = {
       },
     },
     "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-DT7KG99G4T", // Google Analytics / GA
+        ],
+      },
+    },
   ],
   siteMetadata: {
     title: "Nicole Orchard",
