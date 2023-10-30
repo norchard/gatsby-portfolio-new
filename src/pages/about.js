@@ -38,7 +38,11 @@ export default function About() {
           </p>
         </div>
         <div className={styles.image}>
-          <img src="../nicole.png" style={{ maxWidth: "400px" }} />
+          <img
+            alt="nicole portrait"
+            src="../nicole.png"
+            style={{ maxWidth: "400px" }}
+          />
         </div>
       </div>
     </Layout>
