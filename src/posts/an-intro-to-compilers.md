@@ -1,7 +1,7 @@
 ---
 title: "An Intro To Compilers"
 date: "2017-08-15"
-slug: "an-intro-to-compilers"
+slug: "compilers"
 ---
 
 **tl;dr:** [Learning new meanings for front-end and back-end](https://twitter.com/norchard/status/864246049266958336).
