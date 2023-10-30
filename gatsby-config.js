@@ -58,6 +58,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-M78PLQTL",
+      },
+    },
   ],
   siteMetadata: {
     title: "Nicole Orchard",
