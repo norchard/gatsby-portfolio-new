@@ -1,9 +1,9 @@
 ---
-title: "NBC Universal"
-description: "Portfolio app design for NBCU to showcase ad campaigns"
-stack: "Adobe Illustrator | Sketch | Adobe XD"
-image: "nbcu.jpg"
-slug: "nbc-universal"
+title: NBC Universal
+description: Portfolio app design for NBCU to showcase ad campaigns
+stack: Adobe Illustrator | Sketch | Adobe XD
+image: nbcu.jpg
+slug: nbc-universal
 ---
 
 ### Information Architecture & Visual Design

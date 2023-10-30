@@ -2,8 +2,11 @@ import React from "react";
 import Layout from "../components/Layout";
 import Seo from "../components/SEO";
 import * as styles from "../styles/about.module.css";
+import Img from "gatsby-image";
+import { graphql } from "gatsby";
 
-export default function About() {
+export default function About({ data }) {
+  console.log(data);
   return (
     <Layout>
       <div className={styles.about}>
@@ -38,10 +41,13 @@ export default function About() {
           </p>
         </div>
         <div className={styles.image}>
-          <img
+          <Img
+            fluid={data.file.childImageSharp.fluid}
             alt="nicole portrait"
-            src="../nicole.png"
-            style={{ maxWidth: "400px" }}
+            style={{
+              maxWidth: "400px",
+              marginLeft: "200px",
+            }}
           />
         </div>
       </div>
@@ -52,3 +58,15 @@ export default function About() {
 export function Head() {
   return <Seo title="About" />;
 }
+
+export const query = graphql`
+  query ImageQuery {
+    file(relativePath: { eq: "nicole.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

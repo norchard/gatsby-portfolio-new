@@ -1,11 +1,12 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import * as styles from "../styles/home.module.css";
-// import { Link, graphql } from "gatsby";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Seo from "../components/SEO";
+import Img from "gatsby-image";
 
 export default function Home({ data }) {
+  console.log(data);
   // const { title, description } = data.site.siteMetadata;
 
   return (
@@ -19,8 +20,8 @@ export default function Home({ data }) {
             My Portfolio Projects
           </Link>
         </div>
-        <img
-          src="/nicole_rc.png"
+        <Img
+          fluid={data.file.childImageSharp.fluid}
           alt="nicole"
           style={{ maxWidth: "100%", marginTop: "20px" }}
         />
@@ -33,13 +34,14 @@ export function Head() {
   return <Seo title="Home" />;
 }
 
-// export const query = graphql`
-//   query SiteInfo {
-//     site {
-//       siteMetadata {
-//         description
-//         title
-//       }
-//     }
-//   }
-// `;
+export const query = graphql`
+  query ImageQuery {
+    file(relativePath: { eq: "nicole_rc.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

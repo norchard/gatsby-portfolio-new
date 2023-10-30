@@ -31,7 +31,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         // The unique name for each instance
-        name: `image`,
+        name: `images`,
         // Path to the directory
         path: `${__dirname}/src/images/`,
       },
@@ -49,6 +49,7 @@ module.exports = {
         ],
       },
     },
+    "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
       resolve: `gatsby-plugin-google-gtag`,

@@ -17,8 +17,10 @@
   font-weight: 400;
 }
 
-.image {
+.img {
+  display: flex;
   text-align: right;
+  justify-content: right;
 }
 
 @media (max-width: 768px) {

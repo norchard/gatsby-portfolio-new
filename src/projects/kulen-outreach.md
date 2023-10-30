@@ -1,9 +1,9 @@
 ---
-title: "Kulen Outreach"
-description: "Branding and web design for a school system in Cambodia"
-stack: "Adobe Illustrator | Sketch | Adobe XD"
-image: "kulen-outreach.jpg"
-slug: "kulen-outreach"
+title: Kulen Outreach
+description: Branding and web design for a school system in Cambodia
+stack: Adobe Illustrator | Sketch | Adobe XD
+image: kulen-outreach.jpg
+slug: kulen-outreach
 ---
 
 ## Branding
