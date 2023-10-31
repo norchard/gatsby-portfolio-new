@@ -5,7 +5,6 @@ import Seo from "../components/SEO";
 import { Link, graphql } from "gatsby";
 
 export default function Projects({ data }) {
-  console.log(data);
   const projects = data.allMarkdownRemark.nodes;
 
   return (
@@ -16,16 +15,11 @@ export default function Projects({ data }) {
         <div>
           {projects.map((project) => {
             const info = project.frontmatter;
-            console.log("image", info.image);
             const idBase = info.title.toLowerCase().split(" ").join("-");
             return (
               <div key={project.id} className={styles.projectTile}>
                 <h1>{info.title}</h1>
-                <img
-                  alt={info.title}
-                  src={`/thumbnails/${info.image}`}
-                  // styles={{ width: "200px", objectFit: "contain" }}
-                />
+                <img alt={info.title} src={`/thumbnails/${info.image}`} />
                 <p>{info.description}</p>
                 <p>
                   {info.demolink && (

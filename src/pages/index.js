@@ -6,9 +6,6 @@ import Seo from "../components/SEO";
 import Img from "gatsby-image";
 
 export default function Home({ data }) {
-  console.log(data);
-  // const { title, description } = data.site.siteMetadata;
-
   return (
     <Layout>
       <section className={styles.header}>

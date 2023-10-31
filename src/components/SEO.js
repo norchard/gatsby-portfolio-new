@@ -2,7 +2,6 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
 export default function Seo({ title, description, children }) {
-  console.log("seo");
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -16,8 +15,6 @@ export default function Seo({ title, description, children }) {
 
   const { title: siteTitle, description: siteDescription } =
     data.site.siteMetadata;
-
-  console.log(siteTitle);
 
   return (
     <>

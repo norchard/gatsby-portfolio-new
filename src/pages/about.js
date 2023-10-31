@@ -6,7 +6,6 @@ import Img from "gatsby-image";
 import { graphql } from "gatsby";
 
 export default function About({ data }) {
-  console.log(data);
   return (
     <Layout>
       <div className={styles.about}>
