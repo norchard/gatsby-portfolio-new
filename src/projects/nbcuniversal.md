@@ -1,7 +1,7 @@
 ---
 title: NBC Universal
 description: Portfolio app design for NBCU to showcase ad campaigns
-stack: Adobe Illustrator | Sketch | Adobe XD
+stack: Sketch | Adobe XD
 image: nbcu.jpg
 slug: nbc-universal
 ---
