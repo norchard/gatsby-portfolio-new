@@ -60,7 +60,7 @@ export function Head() {
 
 export const query = graphql`
   query ImageQuery {
-    file(relativePath: { eq: "nicole.png" }) {
+    file(relativePath: { eq: "nicole-color-factory.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
