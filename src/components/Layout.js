@@ -10,7 +10,7 @@ export default function Layout({ children }) {
         <div className="content">{children}</div>
         <footer>
           <div className="copyright">
-            <p>© 2023 Nicole Orchard</p>
+            <p>© 2024 Nicole Orchard</p>
           </div>
           <div className="socials">
             {/* <a className="btn pink" href="github.com">
