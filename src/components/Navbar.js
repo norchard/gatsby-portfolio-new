@@ -37,6 +37,13 @@ export default function Navbar() {
         >
           <span>📓</span>Writing
         </Link>
+        {/* <Link
+          to="/ceramics"
+          activeStyle={{ color: "#e23e15" }}
+          partiallyActive={true}
+        >
+          <span>🏺</span>Ceramics
+        </Link> */}
       </div>
     </div>
   );

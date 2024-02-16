@@ -10,16 +10,13 @@ export default function About({ data }) {
     <Layout>
       <div className={styles.about}>
         <div className={styles.text}>
-          <h2>Hi, I'm Nicole,</h2>
-          <h3>Web Designer & Developer</h3>
+          <h3>Hi, I'm Nicole</h3>
           <p>
-            I used to call myself a "designer turned developer", but I'm
-            actually both. My designer-self and my developer-self have both been
-            fueled by my curiousity to learn how things are made. I enjoy the
-            sense of satisfaction that comes from creating something new. I
-            started building websites when I needed a design portfolio. Every
-            couple of years I would update it and learn more HTML, CSS, and
-            Javascript. I was hooked.
+            I am a web designer and developer who is motivated by my curiousity
+            to learn how things are made. I enjoy the sense of satisfaction that
+            comes from creating something new. I started building websites when
+            I needed a design portfolio. Every couple of years I would update it
+            and learn more HTML, CSS, and Javascript. I was hooked.
           </p>
           <p>
             Eventually I decided to focus my attention on programming. After

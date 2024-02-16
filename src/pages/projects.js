@@ -10,8 +10,6 @@ export default function Projects({ data }) {
   return (
     <Layout>
       <div className={styles.portfolio}>
-        <h2>Projects</h2>
-        <h3>Projects & Websites I've Created</h3>
         <div>
           {projects.map((project) => {
             const info = project.frontmatter;

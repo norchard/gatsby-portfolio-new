@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import * as styles from "../styles/home.module.css";
+import * as styles from "../styles/ceramics.module.css";
 import { Link, graphql } from "gatsby";
 import Seo from "../components/SEO";
 import Img from "gatsby-image";
@@ -8,12 +8,13 @@ import Img from "gatsby-image";
 export default function Home({ data }) {
   return (
     <Layout>
-      <section className={styles.header}>
+      <section className={styles.ceramics}>
         <div>
-          <h3>Web Designer & Developer</h3>
-          <Link id="view-projects-cta" className={styles.btn} to="/projects">
-            My Portfolio Projects
-          </Link>
+          <h3>Ceramics</h3>
+          <p>
+            When I'm not pushing pixels or writing lines of code, you can
+            sometimes find me spinning on the wheel.
+          </p>
         </div>
         <Img
           fluid={data.file.childImageSharp.fluid}
@@ -31,7 +32,7 @@ export function Head() {
 
 export const query = graphql`
   query ImageQuery {
-    file(relativePath: { eq: "nicole_rc.png" }) {
+    file(relativePath: { eq: "ceramics-1.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

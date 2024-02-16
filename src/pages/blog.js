@@ -13,11 +13,25 @@ export default function Blog({ data }) {
   return (
     <Layout>
       <div className={styles.blog}>
-        <h2>Blog Posts</h2>
+        <h2 className={styles.title}>Blog Posts</h2>
         {posts.map((post) => (
-          <h3 key={post.id}>
-            <Link to={"/blog/" + post.slug}>{post.title}</Link>
-          </h3>
+          <div className={styles.post}>
+            <h3 key={post.id}>
+              <Link to={"/blog/" + post.slug}>{post.title}</Link>
+            </h3>
+            {post.slug === "compilers" ? (
+              <p>
+                <a
+                  className="btn pink"
+                  href="https://news.ycombinator.com/item?id=15005031"
+                >
+                  #1 on Hacker News
+                </a>
+              </p>
+            ) : (
+              ""
+            )}
+          </div>
         ))}
       </div>
     </Layout>
