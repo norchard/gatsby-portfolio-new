@@ -10,6 +10,17 @@
 module.exports = {
   plugins: [
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Nicole Orchard`,
+        short_name: `NO`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        // Generate PWA icons and a favicon
+        icon: `src/images/icon.svg`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         // The unique name for each instance
