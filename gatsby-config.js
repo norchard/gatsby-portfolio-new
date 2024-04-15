@@ -76,10 +76,63 @@ module.exports = {
         id: "GTM-M78PLQTL",
       },
     },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              title
+              siteUrl
+              site_url: siteUrl
+            }
+          }
+        }
+      `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              const posts = allMarkdownRemark.nodes.filter(
+                (node) => node.frontmatter.date
+              );
+              return posts.map((node) => {
+                return Object.assign({}, node.frontmatter, {
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  custom_elements: [{ "content:encoded": node.html }],
+                });
+              });
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  nodes {
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/feed.xml",
+            title: "Nicole Orchard",
+          },
+        ],
+      },
+    },
   ],
   siteMetadata: {
     title: "Nicole Orchard",
-    description: "Web Dev Portfolio",
-    copyright: "This website is copyright 2023 Nicole Orchard",
+    siteUrl: "https://nicoleorchard.com",
+    copyright: "This website is copyright 2024 Nicole Orchard",
   },
 };
