@@ -99,8 +99,14 @@ module.exports = {
               return posts.map((node) => {
                 return Object.assign({}, node.frontmatter, {
                   date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  url:
+                    site.siteMetadata.siteUrl +
+                    "/blog/" +
+                    node.frontmatter.slug,
+                  guid:
+                    site.siteMetadata.siteUrl +
+                    "/blog/" +
+                    node.frontmatter.slug,
                   custom_elements: [{ "content:encoded": node.html }],
                 });
               });
@@ -112,12 +118,10 @@ module.exports = {
                 ) {
                   nodes {
                     html
-                    fields {
-                      slug
-                    }
                     frontmatter {
                       title
                       date
+                      slug
                     }
                   }
                 }
